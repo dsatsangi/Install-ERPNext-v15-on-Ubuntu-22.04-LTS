@@ -76,7 +76,6 @@ sudo apt-get install redis-server
     sudo apt-get install software-properties-common
     sudo apt install mariadb-server mariadb-client
     sudo mysql_secure_installation
-    systemctl restart mariadb
 ```
 
 Upon running the last command, you’ll encounter a series of prompts on the server. Make sure to follow the subsequent Steps carefully to ensure the setup is configured properly.
@@ -111,6 +110,11 @@ Reload privilege tables now? [Y/n] Y
     
     [mysql]
     default-character-set = utf8mb4
+
+```bash
+    #restart mariadb to update my.cnf
+    systemctl restart mariadb
+```
 
 ###  Step 9 - Install other packages
 ```bash

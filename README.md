@@ -161,7 +161,7 @@ Reload privilege tables now? [Y/n] Y
     
 #### Change user directory permissions
 ```bash
-    chmod -R o+rx /home/[frappe-user]
+    sudo chmod -R o+rx /home/[frappe-user]
 ```
     
 ### Step 12 - Create a New Site

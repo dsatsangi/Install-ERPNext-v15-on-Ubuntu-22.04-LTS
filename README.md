@@ -230,6 +230,6 @@ You will be faced with several prompts, respond to them accordingly. This comman
 
 ## Credits
 
-This software uses the following open source packages:
+This how to has been prepared in reference with
 
-- [https://github.com/kalungia/How-to-Install-ERPNext-on-Ubuntu-22.04-LTS](https://github.com/kalungia/How-to-Install-ERPNext-on-Ubuntu-22.04-LTS)
+- [kalungia/How-to-Install-ERPNext-on-Ubuntu-22.04-LTS](https://github.com/kalungia/How-to-Install-ERPNext-on-Ubuntu-22.04-LTS)

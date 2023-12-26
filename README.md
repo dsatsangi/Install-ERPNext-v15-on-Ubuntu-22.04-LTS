@@ -118,8 +118,12 @@ Reload privilege tables now? [Y/n] Y
 
 ###  Step 9 - Install other packages
 ```bash
-    sudo apt-get install xvfb libfontconfig wkhtmltopdf
+    sudo apt-get install xvfb libfontconfig
     sudo apt-get install libmysqlclient-dev
+
+    wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb && sudo dpkg --install wkhtmltox_0.12.6.1-2.jammy_amd64.deb;
+    wkhtmltopdf --version  #Test the install: wkhtmltopdf 0.12.6 (with patched qt)
+
 ```
     
 ###  Step 10 - Install CURL, Node.js, NPM, and Yarn

@@ -135,8 +135,8 @@ Reload privilege tables now? [Y/n] Y
 ##### Node.js
 ```bash
     sudo apt install curl 
-    curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-    source -/.profile
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+    source ~/.bashrc
     nvm install 20
 ```
 ##### npm

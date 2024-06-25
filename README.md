@@ -176,8 +176,13 @@ Reload privilege tables now? [Y/n] Y
 ### Step 13 - Install ERPNext and other Apps
 ```bash
     bench get-app erpnext --branch version-15
-    bench get-app payments --branch version-15    
+    bench get-app hrms --branch version-15
+    bench get-app --branch version-15 https://github.com/resilient-tech/india-compliance.git
+    bench get-app https://github.com/The-Commit-Company/Raven.git    
     bench --site [site-name] install-app erpnext
+    bench --site [site-name] install-app hrms
+    bench --site [site-name] install-app india_compliance
+    bench --site [site-name] install-app raven
 ```
 
 #### Lastly
@@ -198,6 +203,12 @@ Reload privilege tables now? [Y/n] Y
 ### Step 5 - Restart Supervisor and Launch Production Mode
     sudo supervisorctl restart all
     sudo bench setup production [frappe-user]
+
+# Restore Database
+#### Restore
+    bench --site [site-name] --force restore [path to database backup file] --with-private-files [relative-path-to-private-files-backup-file] --with-public-files [relative-path-to-public-files-backup-file]
+#### Migrate
+    bench --site [site-name] migrate
 
 # Setup Multitenancy
 #### DNS based multitenancy 

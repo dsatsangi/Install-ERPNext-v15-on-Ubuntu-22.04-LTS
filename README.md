@@ -101,7 +101,7 @@ Reload privilege tables now? [Y/n] Y
 
 ### Step 8 - Create my.cnf MYSQL config file
 ```bash
-    sudo nano /etc/mysql/mariadb.conf.d/my.cnf
+sudo nano /etc/mysql/mariadb.conf.d/my.cnf
 ```
 ##### Add these lines
     [mysqld]
@@ -212,7 +212,7 @@ bench --site [site-name] install-app india_compliance
 bench --site [site-name] install-app raven
 ```
 
-#### Lastly (For Development_
+#### Lastly (For Development)
 ```bash
 bench use [site-name]
 ```

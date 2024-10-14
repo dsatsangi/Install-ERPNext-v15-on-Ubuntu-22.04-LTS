@@ -117,7 +117,7 @@ sudo nano /etc/mysql/mariadb.conf.d/my.cnf
 
 #restart mariadb to update my.cnf
 ```bash
-systemctl restart mariadb
+sudo systemctl restart mariadb
 ```
 
 ###  Step 9 - Install other packages
@@ -213,8 +213,13 @@ bench --site [site-name] install-app raven
 ```
 
 #### Lastly (For Development)
+### Switch on DNS based multitenancy (once)
 ```bash
-bench use [site-name]
+bench config dns_multitenant on
+```
+
+```bash
+bench --site [site-name] add-to-hosts
 ```
 ```bash
 bench start
